@@ -1,0 +1,15 @@
+/.deps
+/aclocal.m4
+/autom4te.cache
+/build-aux
+/config.cache
+/config.h
+/config.h.in
+/config.log
+/config.status
+/configure
+/Makefile
+/Makefile.in
+/stamp-h1
+/symlink-track
+/symlink-track.o
