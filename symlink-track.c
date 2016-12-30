@@ -253,12 +253,12 @@ do_optparse (int argc, char **argv)
           printf ("Create a path of resolving symbolic links\n"
                   "\n"
                   "Options:\n"
-                  "  -h --help                - Display this help\n"
-                  "  -m <MAX --max-hops <MAX> - Do a maximum number of <MAX>\n"
-                  "                             hops\n"
-                  "  -v --version             - Display package version\n"
+                  "  -h --help                 - Display this help\n"
+                  "  -m <MAX> --max-hops <MAX> - Do a maximum number of <MAX>\n"
+                  "                              hops\n"
+                  "  -v --version              - Display package version\n"
                   "\n"
-                  "Report any bugs to <" PACKAGE_BUGREPORT ">.\n");
+                  "Report any bugs to <%s>.\n", PACKAGE_BUGREPORT);
           exit (0);
           return 0;
         case 'm':;
