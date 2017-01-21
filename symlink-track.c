@@ -111,8 +111,10 @@ find_next (void)
     }
 
   /* Fix for GNU Hurd */
-#if !defined (PATH_MAX) && defined (_PC_PATH_MAX)
-#define PATH_MAX pathconf (current, _PC_PATH_MAX)
+#if !defined (PATH_MAX) && defined (__gnu_hurd__)
+  /* Hurd has no limits ;-)
+     Define it to a sane value */
+#define PATH_MAX 32767
 #endif
   next = (char *) malloc (PATH_MAX + 1);
   if (!next)
